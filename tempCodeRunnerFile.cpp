@@ -1,1 +1,2 @@
-arr[i] & 1
+    // int arrSize = sizeof(arr) / sizeof(int);
+    // cout<<"Size of array : " << arrSize;
