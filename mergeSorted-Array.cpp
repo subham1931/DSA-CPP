@@ -19,11 +19,17 @@ vector<int> mergeSorted(vector<int> v1, vector<int> v2)
             j++;
         }
     }
-    while (/* condition */)
+    while (i < v1.size())
     {
-        /* code */
+        k.push_back(v1[i]);
+        i++;
     }
-    
+    while (j < v2.size())
+    {
+        k.push_back(v2[i]);
+        j++;
+    }
+
     return k;
 }
 
@@ -31,13 +37,13 @@ void print(vector<int> v)
 {
     for (int i = 0; i < v.size(); i++)
     {
-        cout << v[i]<<" ";
+        cout << v[i] << " ";
     }
 }
 
 int main()
 {
-    vector<int> v1 = {1, 3, 5, 7, 9};
+    vector<int> v1 = {1, 3, 5, 7, 9, 10};
     vector<int> v2 = {2, 4, 6};
 
     vector<int> ans = mergeSorted(v1, v2);
